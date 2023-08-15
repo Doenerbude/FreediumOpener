@@ -26,7 +26,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   if (info.menuItemId === CONTEXT_MENU_ID) {
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
       const originalUrl = tabs[0].url;
-      const prefix = "https://freedium.cfd/"; // Hier den gewünschten Präfix eintragen
+      const prefix = "https://freedium.cfd/"; 
       const modifiedUrl = prefix + originalUrl;
       chrome.tabs.create({ url: modifiedUrl });
     });
