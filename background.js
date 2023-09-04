@@ -6,11 +6,7 @@ function createContextMenu() {
   chrome.contextMenus.create({
     id: CONTEXT_MENU_ID,
     title: "Open page with freedium",
-    contexts: ["page"],
-    documentUrlPatterns: [
-      "https://towardsdatascience.com/*",
-      "https://medium.com/*"
-    ]
+    contexts: ["page"]
   });
 }
 
@@ -26,7 +22,7 @@ chrome.contextMenus.onClicked.addListener(function(info, tab) {
   if (info.menuItemId === CONTEXT_MENU_ID) {
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
       const originalUrl = tabs[0].url;
-      const prefix = "https://freedium.cfd/"; 
+      const prefix = "https://12ft.io/"; 
       const modifiedUrl = prefix + originalUrl;
       chrome.tabs.create({ url: modifiedUrl });
     });
