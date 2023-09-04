@@ -5,7 +5,7 @@ const CONTEXT_MENU_ID = "openWithPrefix";
 function createContextMenu() {
   chrome.contextMenus.create({
     id: CONTEXT_MENU_ID,
-    title: "Open page with freedium",
+    title: "Open page without paywall",
     contexts: ["page"]
   });
 }
