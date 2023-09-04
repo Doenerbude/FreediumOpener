@@ -1,8 +1,8 @@
 {
     "manifest_version": 3,
-    "name": "Freedium Opener",
+    "name": "Paywall remover",
     "version": "1.0",
-    "description": "Don't hide knowledge behind a paywall! \n Opens Medium articles directly on Freedium without a paywall! \n Enjoy!",
+    "description": "Don't hide knowledge behind a paywall! \n Enjoy!",
     "permissions": [
     "contextMenus",
     "activeTab"
